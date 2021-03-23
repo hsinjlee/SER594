@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+   <title>My Profile</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+      <link rel="stylesheet"
+         href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+      <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel ="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:400,700,600,500,300,200,100,800,900">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
+   
+         <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+
+
+
+
+
+   <style type="text/css">
+      body{
+      background-image: url("hack2.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      #foot-ul1 li{
+      list-style: none;
+      float: left;
+      margin:0;
+      padding: 10px;
+      }
+      #foot-ul1 li a{
+      color: #000;
+      text-decoration: none;
+      }
+      #foot-ul1 li a:hover{
+      color: #40a826;
+      text-decoration: none;
+      }
+      #foot-ul2 li a:hover{
+      color: #4286f4;
+      text-decoration: none;
+      border:none;
+      }
+      footer i{
+      padding: 5px;
+      }
+      #content h2{
+      font-size: 1.6em;
+      }
+      #content_in h3{
+      font-size: 1.3em;
+      }
+      .topnav {
+      background-color: #333;
+      overflow: hidden;
+      margin-top: -17px; 
+      }
+      /* Style the links inside the navigation bar */
+      .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      }
+      /* Change the color of links on hover */
+      .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+      }
+      /* Hide the link that should open and close the topnav on small screens */
+      .topnav .icon {
+      display: none;
+      }
+      /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+      @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+      float: right;
+      display: block;
+      }
+      #content h2{
+      font-size: 1.2em;
+      }
+      #content_in h3{
+      font-size: 1em;
+      }
+      }
+      /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+      @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      }
+      .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      }
+      #content_in h3{
+      font-size: 1.2em;
+      }
+      }
+	  <style>
+	  .button1 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+   </style>
+   <body class="w3-light-grey">
+      <!-- Page Container -->
+         <!-- The Grid -->
+         <!-- <div class="w3-row-padding"> -->
+          <!--
+         <div class="topnav" id="myTopnav">
+            <ul class="nav navbar-nav navbar-left">
+               <a href="new.html">Home</a>
+               <a href="receive.html">Received Requests</a>
+               <a href="sent.html">Sent Requests</a>
+               <a href="friend.html">Friends</a>              
+            </ul>
+         </div>
+       -->
+         <!-- Right Column -->
+
+           
+            <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span> 
+               </button>
+           
+            </div>
+            <nav class="navbar navbar-default">
+            <div class="container-fluid bg-blue">
+            <ul class="nav navbar-nav">
+               <ul class="nav navbar-nav navbar-left">
+                              <button  class="dropbtn"  href="#"><img src="logo.png" width="40px" height="40px"></button>
+
+                     <a href="index.html"><button class="dropbtn">Home</button></a>
+                     <a href="Courses.html"><button class="dropbtn">Courses</button></a>
+                     <a href="Professor.html"><button class="dropbtn">Professor</button></a>
+
+
+                  <div class="dropdown">
+
+                     <a href="regional.html"><button class="dropbtn">Enrolled courses</button></a>
+                  </div>
+					
+               </ul>
+            </ul>
+
+              
+            
+         </div>
+      </nav>
+
+
+</nav>
+<br>
+<br>
+<br>
+<br>
+         <div class="w3-container w3-margin">
+            <div class="w3-container w3-card-2 w3-white w3-margin-bottom" id="content">
+               <h2 class="w3-text-grey w3-padding-16">My Profile<span style="float: right"></span></h2>
+               <div class="w3-container w3-margin" id="content_in">
+			   <p style="text-align:center;"><img src="profile-pictures.png" width="150px" height="150px"></p>
+                  <br><h3>Full Name: <span style="float: right" id="Fname"></span>
+                     <br><br>Email Id: <span style="float: right" id="EmailID"></span><br><br>
+                     Number: <span style="float: right" id="PNo"></span><br><br><br><br><br>
+                   
+
+             
+
+                   Add Profile Photo:<br> <br>
+                        
+                     <input type="file" name="" value="upload" id="fileButton"> <br><br>
+                                 
+						<button class="button">Button</button>
+
+                  </h3>
+               </div>
+            </div>
+            <!-- End Right Column -->
+         </div>
+         <!-- End Grid -->
+         <!-- </div> -->
+         <!-- End Page Container -->
+    
+      <script type="text/javascript">
+        
+         /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+         function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "topnav") {
+               x.className += " responsive";
+           } else {
+               x.className = "topnav";
+           }
+         }
+      </script>
+     
+    
+   </body>
+   <footer class="bg-blue" ><center>
+                  <p>Find us on social media.</p>
+         <i class="fa fa-facebook-official w3-hover-opacity" ></i>
+         <i class="fa fa-instagram w3-hover-opacity"></i>
+         <i class="fa fa-snapchat w3-hover-opacity"></i>
+         <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+         <i class="fa fa-twitter w3-hover-opacity"></i>
+         <i class="fa fa-linkedin w3-hover-opacity"></i>
+         </center>
+
+      </footer>   
+</html>
