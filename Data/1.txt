@@ -1,1 +1,3 @@
-https://docs.google.com/forms/d/e/1FAIpQLSfHexnCubGghvV-dGANPHRry8_r9PaoMCHqyXSGF0KCi-404A/viewform
+Taiga: https://tree.taiga.io/project/hsinjlee-ser-594/wiki/feasibility-study
+Drive: https://drive.google.com/drive/u/2/folders/0AI07foImw69OUk9PVA
+Survey: https://docs.google.com/forms/d/e/1FAIpQLSfHexnCubGghvV-dGANPHRry8_r9PaoMCHqyXSGF0KCi-404A/viewform
