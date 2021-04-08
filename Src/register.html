@@ -1,113 +1,70 @@
-
-<!DOCTYPE html>
-
 <html>
+
+
 <head>
-	<style>
-.button {
-    background-color: #0A4EBD;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-</style>
-<script>
-      function validateform()
-      {
-      	 var x = document.forms["register"]["fname"].value;
- 	   if (x == "") {
-        alert("First name must be filled out!");
-        return false;
-	}
-	var x = document.forms["register"]["lname"].value;
-   	 if (x == "") {
-        alert(" Last name must be filled out!");
-        return false;
-	}
-	
-         var x=document.forms["register"]["email_add"].value;
-		pos1=x.indexOf("@");
-		pos2=x.lastIndexOf(".");
-		if(pos1<1 || (pos2-pos1<2))
-		{
-		alert("Please enter valid Email Id!");
-		document.forms["register"]["email_add"].focus();
-		return false;
-		}
-        
-        if(document.forms["register"]["mobile_no"].value.length!="10")
-		{
-		alert("Enter Mobile Number!");	
-		document.forms["register"]["mobile_no"].focus();
-		return false;
-		}
-		var x1 = document.forms["register"]["password"].value;
-   	 if (x1== "") {
-        alert(" Enter valid password!");
-        return false;
-	}
-		var x2 = document.forms["register"]["re_password"].value;
-   	 if (x2!=x1) {
-        alert("Password conformation failed!");
-        return false;
-	}
-      }
-</script>
-
-<title>Register</title>
-<!-- Meta tag Keywords -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Flat Sign Up Form Responsive Widget Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-function hideURLbar(){ window.scrollTo(0,1); } </script>
-
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
-
-
-<link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'><link href='//fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
-<link href="main.css">
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <meta name="description" content="Login - Register Template">
+    <meta name="author" content="Lorenzo Angelino aka MrLolok">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+    </style>
 </head>
 
 <body>
+    <div id="container-register">
+        <div id="title">
+            <i class="material-icons lock">lock</i> Register
+        </div>
 
-<!--header-->
-	<div class="header-w3l">
-		<h1>Register</h1>
-	</div>
+        <form>
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">email</i>
+                </div>
+                <input id="email" placeholder="Email" type="email" required class="validate" autocomplete="off">
+            </div>
 
-<!--//header-->
-<!--main-->
-<div class="main-agileits">
-	<h2 class="sub-head">Sign Up</h2>
-		<div class="sub-main">	
-			<form name="register" action="C:\Users\MR Joshi\Documents\SL 3 Project\register.html" onsubmit="return validateform()" method="post">
-				<input placeholder="First Name" id="fname" name="Name" class="name" type="text" required="">
-					<span class="icon1"><i class="fa fa-user" aria-hidden="true"></i></span><br>
-				<input placeholder="Last Name" id="lname" name="Name" class="name2" type="text" required="">
-					<span class="icon2"><i class="fa fa-user" aria-hidden="true"></i></span><br>
-				<input placeholder="Phone Number" id="mobile_no" name="Number" class="number" type="text" required="">
-					<span class="icon3"><i class="fa fa-phone" aria-hidden="true"></i></span><br>
-				<input placeholder="Email" name="mail"  id="email_add" class="mail" type="text" required="">
-					<span class="icon4"><i class="fa fa-envelope" aria-hidden="true"></i></span><br>
-				<input  placeholder="Password" name="Password" id="password" class="pass" type="password" required="">
-					<span class="icon5"><i class="fa fa-unlock" aria-hidden="true"></i></span><br>
-				<input  placeholder="Confirm Password" name="Password" id="re_password" class="pass" type="password" required="">
-					<span class="icon6"><i class="fa fa-unlock" aria-hidden="true"></i></span><br>
-				
-				<input type="submit" value="sign up">
-			</form>
-		</div>
-		<div class="clear"></div>
-</div>
-<a href="home.html" class="button">Back to Home</a>
+            <div class="clearfix"></div>
+
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">face</i>
+                </div>
+                <input id="username" placeholder="Username" type="text" required class="validate" autocomplete="off">
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">vpn_key</i>
+                </div>
+                <input id="password" placeholder="Password" type="password" required class="validate" autocomplete="off">
+            </div>
+
+            <div class="remember-me">
+                <input type="checkbox">
+                <span style="color: #DDD">I accept Terms of Service</span>
+            </div>
+
+          <a href="login.html">  <input type="submit" value="Register" />
+        </form>
+
+        <div class="privacy">
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="register">
+            Do you already have an account?
+            <a href="login.html"><button id="register-link">Log In here</button></a>
+        </div>
+    </div>
 </body>
+
 </html>
