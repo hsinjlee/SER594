@@ -1,82 +1,96 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
+</head>    
+<style>
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color:#6abadeba;  
+    font-family: 'Arial';  
+}  
+.login{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: #bdc7c5;  
+        border-radius: 15px ;  
+          
+}  
+h2{  
+    text-align: center;  
+    color: #277582;  
+    padding: 20px;  
+}  
+label{  
+    color: #08ffd1;  
+    font-size: 17px;  
+}  
+#Uname{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#Pass{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#log{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: blue;  
+  
+  
+}  
+span{  
+    color: white;  
+    font-size: 17px;  
+}  
+ 
+</style>
+<body class="w3-light-grey">
+<body>  
+	
+    <h2>Login Page</h2><br>  
 
-<html lang="en">
-   <head class=" mdc-typograph">
-      <title> Coursexhange </title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="main.css">
-      <link rel="stylesheet"
-         href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
-      <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <link rel ="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:400,700,600,500,300,200,100,800,900">
-
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta charset="utf-8">
-   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
-   </head>
-
-   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" >
-      <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span> 
-               </button>
-           
-            </div>
-            <nav class="navbar navbar-default">
-            <div class="container-fluid bg-blue">
-            <ul class="nav navbar-nav">
-               <ul class="nav navbar-nav navbar-left">
-                              <button  class="dropbtn"  href="#"><img src="logo.png" width="50px" height="50px"></button>
-               </ul>
-            </ul>
-
-               <ul class="nav navbar-nav navbar-right">
-                <a href="login.html"> <button class="dropbtn">Login</button></a>  
-               <div class="dropdown">
-                  <button class="dropbtn"><span class="glyphicon glyphicon-user"></span>Account<span class="caret"></span></button>
-                     <div class="dropdown-content">
-                        <a href="profile.html"><button class="dropbtn">My Profile</button></a>
-                        <button class="dropbtn">Logout</button>
-                     </div>
-                  </div>
-               </ul>
-            
-         </div>
-      </nav>
-
-<script>
- function validateform()
-      {
-         var x = document.forms["login"]["username"].value;
-     if (x == "") {
-        alert(" Username must be filled out!");
-        return false;
-  }
-  var x = document.forms["login"]["password"].value;
-     if (x == "") {
-        alert("Password must be filled out!");
-        return false;
-  }
-}
-</script>
-
-<link rel="stylesheet" type="text/css" href="login.css">
-<div class="login-page">
-  <div class="form">
-   
-     <form name="login" action="C:\Users\MR Joshi\Documents\SL 3 Project\login.html" onsubmit="return validateform()" method="post">
-    <form class="login-form"><h2 style="color: white">Log In</h2>
-      <input type="text" id="username" placeholder="username"/>
-      <input type="password" id="password" placeholder="password"/>
-      <button>login</button>
-      <p class="message">Not registered? <a href="register.html">Create an account</a></p>
-    </form>
-  </div>
-</div>
+    <div class="login">  
+    <form id="login" method="get" action="login.php">    
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Username">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <br><br>    
+        <a href="index.html"><input type="button" name="log" id="log" value="Log In Here"> </a>      
+        <br><br>  
+	<a href="register.html"><input type="button" name="log" id="log" value="Sign up"> </a>      
+        <br><br>  
+        <input type="checkbox" id="check">    
+        <span>Remember me</span>    
+        <br><br>    
+        Forgot<a href="#">Password</a>    
+    </form>     
+</div> 
+</div>    
+</div> 
+</div>  
+</body>    
+</html> 

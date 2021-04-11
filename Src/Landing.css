@@ -1,0 +1,11 @@
+horizontal-card{
+  position:relative;
+  display: flex;
+  border:1px solid gray;
+  margin-bottom:1rem;
+
+  .horizontal-card-body{
+    display: flex;
+    flex-direction: column;
+    margin-left:1rem;
+}}
