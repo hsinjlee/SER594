@@ -3,17 +3,69 @@
    <head class=" mdc-typograph">
       <title> Courseexhange </title>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">    
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
       
+
+
+      <link rel="stylesheet" type="text/css" href="main.css">
+      <link rel="stylesheet"
+         href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
       <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <link rel ="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:400,700,600,500,300,200,100,800,900">
+
       <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta charset="utf-8">
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
+   </head>
+   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" >
+      <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span> 
+               </button>
+           
+            </div>
+            <nav class="navbar navbar-default">
+            <div class="container-fluid bg-blue">
+            <ul class="nav navbar-nav">
+               <ul class="nav navbar-nav navbar-left">
+                              <button  class="dropbtn"  href="#"><img src="logo.png" width="40px" height="40px"></button>
+
+                     <a href="index.html"><button class="dropbtn">Home</button></a>
+                     <button class="dropbtn active">Courses</button>
+                     <a href="hollywood1.html"><button class="dropbtn">Faculty</button></a>
+
+
+                   
+
+               </ul>
+            </ul>
+
+               <ul class="nav navbar-nav navbar-right">
+                <a href="Help.html"> <button class="dropbtn">Help</button></a>  
+               <div class="dropdown">
+                  <button class="dropbtn"><span class="glyphicon glyphicon-user"></span>Account<span class="caret"></span></button>
+                     <div class="dropdown-content">
+                       <a href="profile.html"> <button class="dropbtn">My Profile</button></a>
+                        <button class="dropbtn">Logout</button>
+                     </div>
+                  </div>
+               </ul>
+            
+         </div>
+      </nav>
+
+
+</nav>
+<meta name="viewport" content="width=device-width, initial-scale=1">
  <style>
  {
   box-sizing: border-box;
@@ -54,7 +106,7 @@ a {text-align: center;}
 
                      <button class="dropbtn active">Home</button>
                      <a href="Courses.html"><button class="dropbtn">Courses</button></a>
-                     <a href="Professor.html"><button class="dropbtn">Professor</button></a>
+                     <a href="Professor.html"><button class="dropbtn">Faculty</button></a>
 
 
 
@@ -67,7 +119,7 @@ a {text-align: center;}
                   <button class="dropbtn"><span class="glyphicon glyphicon-user"></span>Account<span class="caret"></span></button>
                      <div class="dropdown-content">
                         <a href="profile.html"><button class="dropbtn">My Profile</button></a>
-                    <a href="login.html"> <button class="dropbtn">Logout</button>
+                    <a href="Landing.html"> <button class="dropbtn">Logout</button>
                      </div>
                   </div>
                </ul>
@@ -95,14 +147,15 @@ a {text-align: center;}
 <br>
 <br>
 <br>
-<br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="courses.html"><button class="clickhere">Add course</button></a> <br><br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="courses.html"><button class="clickhere">Swap course</button></a> <br><br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="courses.html"><button class="clickhere">Withdraw course</button></a> <br><br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="courses.html"><button class="clickhere">Waitlist course</button></a> <br><br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="courses.html"><button class="clickhere">Compare</button></a> <br><br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="professor.html"><button class="clickhere">Talk to professor</button></a> <br><br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="help.html"><button class="clickhere">Talk to advisor</button></a> <br><br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="courses.html"><button class="clickhere">Search course</button></a> <br><br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="Add.html"><button class="clickhere">Add course</button></a> <br><br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="withdraw.html"><button class="clickhere">Withdraw course</button></a> <br><br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="courses.html"><button class="clickhere">Compare courses</button></a> <br><br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="courses.html"><button class="clickhere">Swap courses</button></a> <br><br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="Waitlist.html"><button class="clickhere">Waitlist course</button></a> <br><br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="professor.html"><button class="clickhere">Talk to faculty</button></a> <br><br>
+
   </div>
   <div class="column" style="background-color:#bbb;">
 
@@ -121,21 +174,11 @@ a {text-align: center;}
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Enrolled.html"><button class="dropbtn">Enrolled courses</button></a>
-                  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Enrolled.html"><button class="dropbtn">Enrolled courses</button></a><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Enrolled.html"><button class="dropbtn">Waitlisted courses</button></a><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Enrolled.html"><button class="dropbtn">Schedule appointments</button></a><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Enrolled.html"><button class="dropbtn">Email request</button></a><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Enrolled.html"><button class="dropbtn">Completed courses</button></a><br><br>                </div>
  </div>
 </div>
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Add a course</h2>
+
+<form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname" value=" "><br><br>
+  Last name: <input type="text" name="lname" value=" "><br><br>
+  Email: <input type="text" name="lname" value=" "><br><br>
+  Course name: <input type="text" name="lname" value=""><br><br>
+  
+</form> 
+
+
+<div>
+
+	<button type="button" onclick="alert('Course Added!')"> Submit </button>
+
+<a href = "index.html"> <button onclick="myFunction()">Back to home</button><a/>
+
+</div>
+
+</script>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.forms["frm1"];
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
