@@ -25,13 +25,13 @@ const item1 = new Item({
   name: "Welcome to Enroll/Drop Courses!"
 });
 
-// const item2 = new Item({
-//   name: "Hit the + button to add a new course."
-// });
+const item2 = new Item({
+  name: "Hit the + button to add a new course."
+});
 
-// const item3 = new Item({
-//   name: "<-- Hit this to delete a course."
-// });
+const item3 = new Item({
+  name: "<-- Hit this to delete a course."
+});
 
 // const defaultItems = [item1, item2, item3];
 const defaultItems = [item1];
