@@ -22,18 +22,19 @@ const Item = mongoose.model("Item", itemsSchema);
 
 
 const item1 = new Item({
-  name: "Welcome to enrolled courses!"
+  name: "Welcome to Enroll/Drop Courses!"
 });
 
-const item2 = new Item({
-  name: "Hit the + button to add a new course."
-});
+// const item2 = new Item({
+//   name: "Hit the + button to add a new course."
+// });
 
-const item3 = new Item({
-  name: "<-- Hit this to delete a course."
-});
+// const item3 = new Item({
+//   name: "<-- Hit this to delete a course."
+// });
 
-const defaultItems = [item1, item2, item3];
+// const defaultItems = [item1, item2, item3];
+const defaultItems = [item1];
 
 const listSchema = {
   name: String,
@@ -57,7 +58,7 @@ app.get("/", function(req, res) {
       });
       res.redirect("/");
     } else {
-      res.render("list", {listTitle: "Enrolled Courses", newListItems: foundItems});
+      res.render("list", {listTitle: "Enroll/Drop Courses", newListItems: foundItems});
     }
   });
 
@@ -97,7 +98,7 @@ app.post("/", function(req, res){
     name: itemName
   });
 
-  if (listName === "Enrolled Courses"){
+  if (listName === "Enroll/Drop Courses"){
     item.save();
     res.redirect("/");
   } else {
@@ -113,7 +114,7 @@ app.post("/delete", function(req, res){
   const checkedItemId = req.body.checkbox;
   const listName = req.body.listName;
 
-  if (listName === "Enrolled Courses") {
+  if (listName === "Enroll/Drop Courses") {
     Item.findByIdAndRemove(checkedItemId, function(err){
       if (!err) {
         console.log("Successfully deleted checked courses.");
